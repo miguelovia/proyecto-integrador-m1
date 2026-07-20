@@ -1,0 +1,152 @@
+[
+  {
+    "user_question": "¿Cuántos días de vacaciones tengo al año y cómo los solicito?",
+    "answer": "La cantidad de días de vacaciones que tienes al año depende de tu antigüedad en la empresa:\n\n- Menos de 2 años de antigüedad: 15 días hábiles al año.\n- De 2 a 5 años de antigüedad: 20 días hábiles al año.\n- Más de 5 años de antigüedad: 25 días hábiles al año.\n\nPara solicitar tus días de vacaciones, debes hacerlo a través del portal de RH en la sección \"Time Off\". Asegúrate de solicitar con al menos 10 días naturales de anticipación si planeas tomar más de 3 días consecutivos. Tu manager directo debe aprobar la solicitud antes de que se descuente del saldo.\n\nSources: Política de vacaciones y permisos (PTO)",
+    "department": "hr",
+    "expected_department": "hr",
+    "match": "OK",
+    "confidence": 0.95,
+    "reasoning": "The question is about vacation days and the process to request them, which falls under the purview of Human Resources as they manage PTO/vacation policies and procedures for requesting time off.",
+    "sources": ["pto_policy.md"],
+    "scores": {
+      "relevance": 5,
+      "completeness": 5,
+      "accuracy": 5
+    }
+  },
+  {
+    "user_question": "¿Donde se encuentra el portal de RH para solicitar días libres?",
+    "answer": "Las solicitudes de días libres se realizan desde el portal de RH, en la sección \"Time Off\". Asegúrate de que tu manager directo apruebe la solicitud antes de que se descuente del saldo. \n\nSources: Incapacidad por enfermedad, Licencia de maternidad y paternidad, Cómo solicitar.",
+    "department": "hr",
+    "expected_department": "hr",
+    "match": "OK",
+    "confidence": 0.95,
+    "reasoning": "The question is about accessing the HR portal to request time off, which falls under the HR department's responsibilities related to PTO/vacation and sick leave policies and systems. IT would only be involved if there were technical issues accessing the portal itself, which is not mentioned here.",
+    "sources": ["pto_policy.md", "onboarding.md"],
+    "scores": {
+      "relevance": 5,
+      "completeness": 5,
+      "accuracy": 5
+    }
+  },
+  {
+    "user_question": "¿Qué requieren los Roles 100% remotos?",
+    "answer": "Los roles 100% remotos requieren aprobación explícita de Recursos Humanos (RH) y del director de área. Esta aprobación debe estar documentada en el portal de RH bajo \"Remote Work Agreement\".\n\nSources: Política de trabajo remoto e híbrido",
+    "department": "hr",
+    "expected_department": "hr",
+    "match": "OK",
+    "confidence": 0.9,
+    "reasoning": "The question is about remote work policy, which falls under the responsibilities of Human Resources. HR handles policies related to work arrangements, including remote and hybrid work setups.",
+    "sources": ["remote_work_policy.md", "onboarding.md"],
+    "scores": {
+      "relevance": 5,
+      "completeness": 4,
+      "accuracy": 5
+    }
+  },
+  {
+    "user_question": "¿La instalación de software estándar requiere aprobación?",
+    "answer": "Para cualquier compra o suscripción nueva de software que supere los $500 USD anuales, se requiere una orden de compra aprobada por Finanzas antes de proceder. Si la instalación de software estándar no supera este monto, no se requiere aprobación de Finanzas, pero IT debe definir los requisitos técnicos y de seguridad. Si tienes dudas específicas sobre un software en particular, te sugiero que consultes con tu manager o con el equipo de IT.\n\nSources: Aprobación de compras y licencias de software.",
+    "department": "finance",
+    "expected_department": "it",
+    "match": "REVISAR",
+    "confidence": 0.9,
+    "reasoning": "The question is about whether software installation requires approval, which typically involves budget considerations and purchase approvals. Therefore, it falls under the finance department's responsibilities, not IT, which would handle the technical aspects of the installation itself once approved by finance.",
+    "sources": ["payroll_and_purchasing.md"],
+    "scores": {
+      "relevance": 4,
+      "completeness": 3,
+      "accuracy": 3
+    }
+  },
+  {
+    "user_question": "Olvidé mi contraseña y no puedo entrar a la VPN, ¿qué hago?",
+    "answer": "Si olvidaste tu contraseña y no puedes acceder a la VPN, primero debes seguir el proceso de restablecimiento de contraseña. Una vez que hayas restablecido tu contraseña, intenta iniciar sesión nuevamente. Si el problema persiste después de restablecer la contraseña, considera abrir un ticket con el equipo de IT.\n\nSources: Acceso remoto y VPN",
+    "department": "it",
+    "expected_department": "it",
+    "match": "OK",
+    "confidence": 0.95,
+    "reasoning": "The issue is related to password reset and VPN access, both of which fall under IT support responsibilities. IT handles account access issues and remote access problems like VPN connectivity, so they are the appropriate department to assist with this query.",
+    "sources": ["vpn_access.md"],
+    "scores": {
+      "relevance": 5,
+      "completeness": 4,
+      "accuracy": 5
+    }
+  },
+  {
+    "user_question": "¿Cuál es el límite de viáticos de comida por día en un viaje de trabajo?",
+    "answer": "El límite de viáticos para comidas es de hasta $60 USD por día en ciudades nivel 1 (Nueva York, Londres, CDMX) y $45 USD por día en el resto de las ciudades. \n\nSources: Política de viajes y viáticos",
+    "department": "finance",
+    "expected_department": "finance",
+    "match": "OK",
+    "confidence": 0.95,
+    "reasoning": "The question is about the daily meal allowance for a business trip, which falls under travel budget and per diem policies managed by the finance department.",
+    "sources": ["travel_policy.md", "payroll_and_purchasing.md"],
+    "scores": {
+      "relevance": 5,
+      "completeness": 5,
+      "accuracy": 5
+    }
+  },
+  {
+    "user_question": "Necesito que legal revise un NDA antes de firmarlo con un proveedor",
+    "answer": "Para que el equipo Legal revise un NDA antes de firmarlo con un proveedor, debes seguir estos pasos:\n\n1. Abre un ticket en el portal de tickets, seleccionando la categoría \"NDA Request\".\n2. Indica la contraparte, el propósito del NDA y si es unilateral o bilateral.\n3. Adjunta el documento del NDA que necesitas que revisen.\n\nRecuerda que ninguna persona fuera del equipo Legal está autorizada a firmar o modificar el lenguaje de un NDA sin revisión previa del equipo Legal.\n\nSi el NDA es estándar y unilateral, el equipo Legal responderá con un borrador en un plazo de 2 días hábiles. Si el NDA tiene cláusulas no estándar o ha sido modificado por la contraparte, el proceso puede tardar de 5 a 10 días hábiles adicionales.\n\nSources: Cómo solicitarlo, Revisión de contratos y SLA de Legal",
+    "department": "legal",
+    "expected_department": "legal",
+    "match": "OK",
+    "confidence": 0.95,
+    "reasoning": "The request involves reviewing a Non-Disclosure Agreement (NDA), which is a legal document. Therefore, the legal department is the appropriate choice to handle this task as they specialize in contract and NDA review processes.",
+    "sources": ["nda_process.md", "contract_review_sla.md"],
+    "scores": {
+      "relevance": 5,
+      "completeness": 5,
+      "accuracy": 5
+    }
+  },
+  {
+    "user_question": "Me descontaron de más en mi nómina este mes, ¿a quién le escribo?",
+    "answer": "Si detectaste un descuento incorrecto en tu nómina, debes abrir un ticket con el equipo de Finanzas en la categoría \"Payroll Discrepancy\" dentro de los 15 días naturales posteriores al pago. Finanzas tiene 5 días hábiles para responder con una corrección o una explicación del descuento.\n\nSources: Nómina y aprobaciones de compra",
+    "department": "finance",
+    "expected_department": "finance",
+    "match": "OK",
+    "confidence": 0.95,
+    "reasoning": "The question is about a payroll deduction, which falls under the finance department's responsibilities. They handle payroll timing and deductions, so they are the appropriate department to address this issue.",
+    "sources": ["expense_reimbursement.md", "payroll_and_purchasing.md"],
+    "scores": {
+      "relevance": 5,
+      "completeness": 5,
+      "accuracy": 5
+    }
+  },
+  {
+    "user_question": "¿Necesito aprobación de compras para una licencia de software nueva?",
+    "answer": "Si la licencia de software nueva cuesta más de $500 USD anuales, necesitas una orden de compra aprobada por Finanzas antes de contratarla. Si es menos de $500 USD anuales, no se requiere esta aprobación previa. \n\nSources: Aprobación de compras y licencias de software",
+    "department": "finance",
+    "expected_department": "finance",
+    "match": "OK",
+    "confidence": 0.95,
+    "reasoning": "The question is about purchase approval for a software license, which falls under the finance department's responsibilities, as they handle purchase and software approvals, not IT.",
+    "sources": ["payroll_and_purchasing.md"],
+    "scores": {
+      "relevance": 5,
+      "completeness": 5,
+      "accuracy": 5
+    }
+  },
+  {
+    "user_question": "Sospecho que se filtraron datos de un cliente, ¿qué hago?",
+    "answer": "Debes reportar de inmediato la sospecha de acceso no autorizado, fuga o exposición de datos de clientes al equipo Legal a través del canal de incidentes (\"Data Incident\"), incluso si no se ha confirmado que ocurrió una fuga real.\n\nSources: Privacidad de datos y cumplimiento, Manejo de incidentes de datos.",
+    "department": "legal",
+    "expected_department": "legal",
+    "match": "OK",
+    "confidence": 0.95,
+    "reasoning": "Data breaches and customer data handling fall under legal responsibilities, as they involve compliance with data privacy laws and regulations. Legal will guide the appropriate steps to take in response to a suspected data breach.",
+    "sources": ["data_privacy_policy.md"],
+    "scores": {
+      "relevance": 5,
+      "completeness": 5,
+      "accuracy": 5
+    }
+  }
+]
