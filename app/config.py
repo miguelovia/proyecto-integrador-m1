@@ -16,8 +16,6 @@ DEPARTMENTS: List[str] = ["hr", "it", "finance", "legal"]
 class Settings:
     openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
 
-    # One model setting per role so cost/quality can be tuned independently
-    # once you've measured real traffic (see DECISIONS.md).
     orchestrator_model: str = os.getenv("ORCHESTRATOR_MODEL", "gpt-4o")
     rag_model: str = os.getenv("RAG_MODEL", "gpt-4o")
     evaluator_model: str = os.getenv("EVALUATOR_MODEL", "gpt-4o")

@@ -11,7 +11,7 @@ SAMPLE_TICKETS = [
     ("¿Cuántos días de vacaciones tengo al año y cómo los solicito?", "hr"),
     ("¿Donde se encuentra el portal de RH para solicitar días libres?", "hr"),
     ("¿Qué requieren los Roles 100% remotos?", "hr"),
-    ("¿La instalación de software estándar requiere aprobación?", "it"),
+    ("¿La instalación de software estándar requiere aprobación?", "finance"),
     ("Olvidé mi contraseña y no puedo entrar a la VPN, ¿qué hago?", "it"),
     ("¿Cuál es el límite de viáticos de comida por día en un viaje de trabajo?", "finance"),
     ("Necesito que legal revise un NDA antes de firmarlo con un proveedor", "legal"),
