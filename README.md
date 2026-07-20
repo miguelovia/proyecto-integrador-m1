@@ -134,7 +134,6 @@ Cada llamada a `handle_query(...)` abre un trace (`support-ticket`) con:
 
 ```bash
 pytest                 # suite rápida (prompts, estructura de datos)
-pytest -m slow         # incluye la prueba que descarga el modelo de embeddings e indexa Chroma
 ```
 
 ## Limitaciones conocidas / próximos pasos
@@ -149,3 +148,5 @@ pytest -m slow         # incluye la prueba que descarga el modelo de embeddings 
 Ver `DECISIONES.md` para el razonamiento detrás de cada una de estas decisiones y sus alternativas
 consideradas.
 
+## Screenshots
+Se adjutan algunas capturas de pantalla de las trazas en langfuse en la carpeta screenshots
